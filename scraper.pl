@@ -24,10 +24,10 @@ my @rows = $tb->look_down(
 my $dt = Database::DumpTruck->new({dbname => 'data.sqlite', table => 'data'});
 
 # Insert some records into the database
-$dt->insert([
-    {Name => 'Susan'},
-    {Occupation => 'Software Developer'}
-]);
+$dt->insert([{
+    Name => 'Susan',
+    Occupation => 'Software Developer'
+}]);
 
 # You don't have to do things with the HTML::TreeBuilder and Database::DumpTruck
 # libraries. You can use whatever libraries are installed on morph.io for Perl
