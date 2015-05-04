@@ -25,8 +25,8 @@ my $dt = Database::DumpTruck->new({dbname => 'data.sqlite', table => 'data'});
 
 # Insert some records into the database
 $dt->insert([
-    {Name = > 'Susan'},
-    {Occupation = > 'Software Developer'}
+    {Name => 'Susan'},
+    {Occupation => 'Software Developer'}
 ]);
 
 # You don't have to do things with the HTML::TreeBuilder and Database::DumpTruck
